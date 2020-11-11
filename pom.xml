@@ -13,8 +13,8 @@
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
         <maven.compiler.source>11</maven.compiler.source>
         <maven.compiler.target>11</maven.compiler.target>
-        <version.plugin.maven.compiler>3.8.0</version.plugin.maven.compiler>
-        <version.plugin.maven.war>3.3.0</version.plugin.maven.war>
+<!--        <version.plugin.maven.compiler>3.8.0</version.plugin.maven.compiler>-->
+<!--        <version.plugin.maven.war>3.3.0</version.plugin.maven.war>-->
     </properties>
 
     <build>
