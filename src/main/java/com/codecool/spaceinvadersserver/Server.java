@@ -25,7 +25,6 @@ public class Server {
     public void listenForClients() throws IOException {
 
         ServerSocket ss = new ServerSocket(Integer.parseInt(System.getenv("PORT")));
-
         Socket s = null;
         DataInputStream dis = null;
         DataOutputStream dos = null;
@@ -40,6 +39,8 @@ public class Server {
                 dos = new DataOutputStream(s.getOutputStream());
 
                 String messageFromClient = dis.readUTF();
+
+                System.out.println(messageFromClient);
 
                 RequestModel requestModel = gson.fromJson(messageFromClient, RequestModel.class);
 
