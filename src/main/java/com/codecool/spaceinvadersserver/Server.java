@@ -24,7 +24,7 @@ public class Server {
 
     public void listenForClients() throws IOException {
 
-        ServerSocket ss = new ServerSocket(8080);
+        ServerSocket ss = new ServerSocket(Integer.parseInt(System.getenv("PORT")));
 
         Socket s = null;
         DataInputStream dis = null;
